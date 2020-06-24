@@ -16,6 +16,7 @@ aliases:
       - equal: [ develop, << pipeline.git.branch >> ]
       - equal: [ main, << pipeline.git.branch >> ]
       - equal: [ master, << pipeline.git.branch >> ]
+      - equal: [ circleci, << pipeline.git.branch >> ]
 jobs:
   build_for_mac:
     macos:
